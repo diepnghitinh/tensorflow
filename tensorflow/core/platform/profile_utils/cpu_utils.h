@@ -70,7 +70,7 @@ class CpuUtils {
 #elif defined(__aarch64__) && defined(TARGET_OS_IOS)
     // On iOS, we are not able to access the cntvct_el0 register.
     // As a temporary build fix, we will just return the dummy cycle clock.
-    return DUMMY_CYCLE_CLOCK
+    return DUMMY_CYCLE_CLOCK;
 #elif defined(__aarch64__)
     // System timer of ARMv8 runs at a different frequency than the CPU's.
     // The frequency is fixed, typically in the range 1-50MHz.  It can because
